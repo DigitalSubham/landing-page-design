@@ -1,0 +1,193 @@
+.featureContainer {
+  min-height: 100vh; /* Minimum height of the screen */
+  min-width: 100vw; /* Minimum width of the screen */
+  background: #caeefa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featureContainer2 {
+  display: grid; /* Grid display */
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  justify-content: space-between;
+  height: auto;
+}
+
+.leftFeatureContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 70%;
+}
+
+.featureTitle {
+  width: 100%;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  font-family: Poppins;
+  color: #0a56f1;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.featureDescription {
+  width: 100%;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #36454f;
+  text-align: left;
+  display: inline-block;
+}
+
+.featureImageParent {
+  position: relative; /* Ensure this is set */
+  height: 517px; /* Explicit height */
+  max-width: 100%; /* Constrain width */
+  justify-content: end;
+}
+
+.featureImage {
+  background-image: url("/featureImage.png");
+  border-radius: 15px;
+  overflow: hidden;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 400px; /* Ensure it spans the parent */
+  height: 100%; /* Match parent's height */
+  z-index: 5;
+  position: absolute;
+  right: 0;
+}
+
+.groupDots {
+  background-image: url("/Groupdots.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 180px; /* Ensure it spans the parent */
+  height: 100%;
+  position: absolute;
+  top: 235px; /* Adjust as needed */
+  left: 70px; /* Adjust as needed */
+  z-index: 2;
+}
+
+.orangeBox {
+  width: 248px;
+  position: absolute;
+  border-radius: 15px;
+  background-color: #f78319;
+  height: 264px;
+  top: -45px;
+  right: -26px;
+}
+
+.blueBox {
+  border-radius: 15px;
+  width: 100%;
+  background-color: #0a56f1;
+  height: 188px;
+  position: absolute;
+  bottom: -50px;
+  right: -26px;
+  z-index: 0;
+}
+
+@media (max-width: 480px) {
+  .featureContainer2 {
+    display: flex; /* Switch to flex layout */
+    flex-direction: column-reverse; /* Image part will come on top */
+    justify-content: center;
+    gap: 100px;
+    padding: 30px 0;
+  }
+  .leftFeatureContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .featureTitle {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    display: inline-block;
+    font-family: Poppins;
+    color: #0a56f1;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .featureDescription {
+    width: 100%;
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-family: Poppins;
+    color: #36454f;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .featureImageParent {
+    position: relative; /* Ensure this is set */
+    height: 317px; /* Explicit height */
+    max-width: 80%; /* Constrain width */
+    justify-content: center;
+    margin: auto;
+    object-fit: contain;
+  }
+
+  .featureImage {
+    background-image: url("/featureImage.png");
+    border-radius: 15px;
+    overflow: hidden;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    width: 161px; /* Ensure it spans the parent */
+    height: 211px; /* Match parent's height */
+    z-index: 5;
+    position: absolute;
+    right: 0;
+  }
+
+  .groupDots {
+    background-image: url("/Groupdots.png");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 73px; /* Ensure it spans the parent */
+    height: 114px;
+    position: absolute;
+    top: 0; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+    z-index: 2;
+  }
+
+  .orangeBox {
+    width: 101px;
+    position: absolute;
+    border-radius: 15px;
+    background-color: #f78319;
+    height: 108px;
+    top: 0;
+    right: 0;
+  }
+
+  .blueBox {
+    border-radius: 15px;
+    width: 250px;
+    background-color: #0a56f1;
+    height: 77px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+}

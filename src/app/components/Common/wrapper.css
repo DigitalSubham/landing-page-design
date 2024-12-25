@@ -1,0 +1,19 @@
+.wrapper {
+  max-width: 1200px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Centers the content horizontally */
+  padding: 0 16px; /* Default side padding */
+}
+
+/* For smaller devices (mobile-first approach) */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 8px; /* Reduce padding on smaller screens */
+  }
+}
+
+/* For very small devices (e.g., phones) */
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 0 4px; /* Further reduce padding on the smallest screens */
+  }
+}

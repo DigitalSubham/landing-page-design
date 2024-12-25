@@ -1,0 +1,54 @@
+.container {
+  min-height: 100vh; /* Minimum height of the screen */
+  min-width: 100vw; /* Minimum width of the screen */
+  background: #0a56f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  display: grid; /* Grid display */
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+}
+
+h2 {
+  color: #fff;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.0375rem;
+}
+
+h3 {
+  color: #fff;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.02625rem;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cta {
+  border-radius: 0.9375rem;
+  background: #fff;
+  color: #0a56f1;
+  font-family: Poppins;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.02813rem;
+  padding: 10px;
+}

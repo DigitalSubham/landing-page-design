@@ -1,0 +1,59 @@
+.demoContainer {
+  min-width: 100vw; /* Minimum width of the screen */
+  background: #f78319;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demoContainer2 {
+  display: grid; /* Grid display */
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+}
+
+.rightDemoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.find-out-how {
+  width: 642px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  font-family: Poppins;
+  color: #fff;
+  text-align: right;
+}
+
+.book-your-personalized {
+  width: 642px;
+  position: relative;
+  font-size: 30px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  font-family: Poppins;
+  color: #fff;
+  text-align: right;
+}
+
+.rectangle-div {
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+  background-color: #fff;
+  height: 65px;
+}
+
+.request-a-demo {
+  width: 214px;
+  position: relative;
+  font-size: 25px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  font-family: Poppins;
+  color: #f78319;
+  text-align: left;
+}

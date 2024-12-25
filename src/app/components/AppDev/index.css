@@ -1,0 +1,8 @@
+.appDevImage {
+  border-radius: 15px;
+  background-color: #36454f;
+}
+
+.appDevImageBox {
+  background-image: url("/.appDevImag.png");
+}

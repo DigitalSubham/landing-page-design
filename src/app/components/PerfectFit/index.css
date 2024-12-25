@@ -1,0 +1,170 @@
+.perfectFitContainer {
+  min-height: 100vh; /* Minimum height of the screen */
+  min-width: 100vw; /* Minimum width of the screen */
+  background: rgb(252, 247, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 247, 255, 1) 0%,
+    rgba(254, 252, 255, 1) 35%,
+    rgba(252, 255, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfectHeader {
+  font-size: 40px;
+  letter-spacing: 0.01em;
+  display: inline-block;
+  font-family: Poppins;
+  color: #0a56f1;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.perfectDesc {
+  width: 60%;
+  margin: auto;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: Poppins;
+  color: #36454f;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  padding-bottom: 50px;
+}
+
+.parent-perfect-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 120px;
+}
+
+.perfect-div {
+  box-shadow: 0px 4px 15px rgba(247, 131, 25, 0.25);
+  border-radius: 25px;
+  background-color: #fff;
+  border: 2px solid #f78319;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 350px; /* Set a fixed height */
+  text-align: center;
+  width: 100%; /* Ensure all cards are full width within their grid cell */
+  z-index: 1;
+}
+
+.virtualDiv {
+  position: absolute;
+  box-shadow: 0px 4px 15px rgba(247, 131, 25, 0.25);
+  border-radius: 15px;
+  background-color: rgba(247, 131, 25, 0.25);
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  width: 80%; /* Adjust size as needed */
+  height: 350px;
+  transform: rotate(-16.3deg);
+  transform-origin: 0 0;
+  z-index: -1;
+}
+
+.perfect-div-img {
+  position: absolute;
+  top: -3rem; /* Adjusted position */
+  left: 50%; /* Optionally, center it horizontally */
+  transform: translateX(-50%); /* Adjust the position to center */
+  border-radius: 50%;
+  background-color: #f78319;
+  width: 80px; /* Adjust size as needed */
+  height: 80px; /* Adjust size as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfect-div p {
+  margin-top: 40px;
+}
+
+.perfectInnerHeader {
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-family: Poppins;
+  color: #f78319;
+  text-align: center;
+  display: inline-block;
+}
+
+.perfectInnerdesc {
+  font-size: 22.5px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-family: Poppins;
+  color: #36454f;
+  text-align: center;
+  display: inline-block;
+}
+
+@media (max-width: 480px) {
+  .perfectFitContainer {
+    min-height: 100vh;
+    min-width: 100%; /* Ensure container does not exceed screen width */
+    display: flex;
+    justify-content: center; /* Align content to the top */
+    align-items: center;
+    padding: 0 1rem; /* Add padding instead of fixed margins */
+  }
+
+  .parent-perfect-div {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Reduced gap between cards */
+    width: 100%; /* Make sure it fits within the screen width */
+    margin-bottom: 1rem;
+  }
+
+  .perfect-div {
+    width: 90%; /* Ensure cards adjust to screen size */
+    padding: 20px;
+    height: auto; /* Allow height to adjust dynamically */
+    box-sizing: border-box; /* Include padding/borders in width/height */
+  }
+
+  .virtualDiv {
+    width: 90%; /* Match the card width */
+    height: auto; /* Adjust height dynamically */
+    transform: rotate(-10deg); /* Slight rotation for styling */
+  }
+
+  .perfectHeader {
+    font-size: 22px; /* Smaller header for mobile */
+    padding: 10px 0;
+  }
+
+  .perfectDesc {
+    font-size: 16px;
+    width: 90%;
+    line-height: 1.5;
+    padding-bottom: 20px;
+  }
+
+  .perfectInnerHeader {
+    font-size: 16px;
+  }
+
+  .perfectInnerdesc {
+    font-size: 14px;
+  }
+}

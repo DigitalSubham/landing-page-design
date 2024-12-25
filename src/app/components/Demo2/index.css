@@ -1,0 +1,59 @@
+.demo2Container {
+  min-width: 100vw; /* Minimum width of the screen */
+  height: 500px;
+  background: #0c59f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo2Container2 {
+  display: grid; /* Grid display */
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+}
+
+.leftDemo2Container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.find-out-how {
+  width: 642px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  font-family: Poppins;
+  color: #fff;
+  text-align: left;
+  font-weight: 600;
+}
+
+.rectangle-demo2-div {
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+  background-color: #fff;
+  height: 65px;
+}
+
+.letStart {
+  font-size: 25px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  font-family: Poppins;
+  color: #0a56f1;
+  text-align: left;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.Demo2Image {
+  height: 100%; /* Cover the parent container's height */
+  width: 100%; /* Ensure the image takes full width of the container */
+  background-image: url("/demo2.png");
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image within the container */
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,41 @@
+.advContainer {
+  min-height: 100vh; /* Minimum height of the screen */
+  min-width: 100vw; /* Minimum width of the screen */
+  background: #caeefa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advContainer2 {
+  display: grid; /* Grid display */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.key-advantages-of {
+  width: 1180px;
+  position: relative;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  font-family: Poppins;
+  color: #0a56f1;
+  text-align: center;
+}
+
+.parent-rectangle-adv-div {
+  display: grid; /* Grid display */
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 10px;
+}
+
+.rectangle-adv-div {
+  box-shadow: 0px 4px 15px rgba(54, 69, 79, 0.25);
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
